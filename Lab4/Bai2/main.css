@@ -1,0 +1,43 @@
+#t{
+	padding-top: 10px;
+}
+#l{
+	padding-bottom: 10px;
+}
+.box{
+	width: 20%;
+	padding: 0px 20px;
+	border-radius: 20px;
+}
+h2{
+    line-height: 40px;
+    background-color: gold;
+    padding: 10px;
+    margin: -1px -21px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 21px;
+}
+.info{
+	background-color: #c1bed0;
+	margin: -21px;
+	border-radius: 0px 0px 20px 20px;
+	padding: 10px;
+}
+p{
+	padding-left: 16px; 
+	padding-top: 3px;
+	color: #770a92;
+}
+button{
+	background-color: #21be6e;
+    padding: 6px 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 18px;
+    font-family: monospace;
+}
+button:hover{
+	background-color: white;
+	color: #21be6e;
+}

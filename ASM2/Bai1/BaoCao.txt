@@ -1,0 +1,22 @@
+Name: Bài 1 - Assignment giai đoạn 2
+Author: Hồ Hoàng Phú - PS17588
+Other: Html css + js kết hợp với AngularJS
+
+Sử dụng AngularJS để tạo {{img}} ở attribute src
+Tạo hàm load() để khi load trang gán đường dẫn hình ảnh cho từng phần tử trong listImg
+	Phần tử đầu tiên là ảnh load gif: dùng để load ra trước khi load hình ảnh, tạo hiệu ứng load ảnh
+Sử dụng :
+	setTimeout(function(){
+		mainLoad(index);
+	}, randomNumber());
+để cho trang web chờ 1 khoảng thời gian ngẫu nhiên từ 100 - 1000 mili giây rồi mới load ảnh. (tạo cảm giác web đang laod ảnh)
+
+Các hàm next pre final first: thuật toán sử dụng như giai đoạn 1.
+
+Có thêm phần auto load ảnh: 
+	Bắt sự kiện click vào checkbox gọi đến $scope.autoLoadImg()
+	Tạo biến auto = null. Nếu như auto = null thì chạy tự động load ảnh, ngược lại thì tắt
+	Hàm disabledButton() có tác dụng disabled button khi chức năng auto load ảnh hoạt động
+	Sử dụng setInterval và set time là 2000 mili giây để mỗi lần load ảnh mới là 2 giây!
+
+Cảm ơn cô đã đọc!

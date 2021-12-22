@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 4 - Lab8</title>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body ng-app="app">
+        <div ng-controller="filterOrderByCtrl" class="container">
+            Show: 
+            <select ng-model="sortColumn">
+                <option value="name">Name ASC</option>
+                <option value="birthDate">Date of Birth ASC</option>
+                <option value="name">Salary ASC</option>
+                <option value="-name">Name DESC</option>
+                <option value="-birthDate">Date of Birth DESC</option>
+                <option value="-salary">Salary DESC</option>
+            </select>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Salary</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                </tr>
+                <tr ng-repeat="employee in employees | orderBy:sortColumn">
+                    <td>{{employee.name | uppercase}}</td>
+                    <td>{{employee.birthDate | date:"dd/MM/yyyy"}}</td>
+                    <td>{{employee.salary | currency:""}}</td>
+                    <td>{{employee.gender | lowercase}}</td>
+                    <td>{{employee.status | status}}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<fieldset class="container">
+		<legend>Form</legend>
+		<form onsubmit="event.preventDefault()">
+			<p>Họ và tên lót</p>
+			*<input type="text" name="firstname">
+			<span id="er1" style="display:none; color: red">Vui lòng nhập ít nhất 2 kí tự</span>
+			<p>Tên</p>
+			*<input type="text" name="lastname">
+			<span id="er2" style="display:none; color: red">Vui lòng nhập ít nhất 2 kí tự</span>
+			<p>Địa chỉ website</p>
+			<input type="text" name="webadr">
+			<p>Năm website khởi tạo</p>
+			<input type="text" name="webyear">
+			<span id="er3" style="display:none; color: red">Vui lòng nhập số</span>
+			<p>Nội dung bài luận</p>
+			*<textarea id="comment"></textarea>
+			<span id="er4" style="display:none; color: red">Vui lòng nhập nội dung bình luận</span><br>
+			*<input type="checkbox" name="rules">
+			<label>Đồng ý với các điều khoản của chúng tôi</label><br>
+			<span id="er5" style="display:none; color: red">Vui lòng chọn vào đây</span><br>
+			<button onclick="check();">Submit</button>
+		</form>
+	</fieldset>
+</body>
+	<script type="text/javascript" src="main.js"></script>
+</html>

@@ -1,0 +1,90 @@
+*{
+	font-family: monospace;
+}
+body {
+    margin: 0 auto;
+    background-color: #101d2d;
+}
+
+.container {
+    position: relative;
+    margin-top: 27px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #ff8906;
+    font-size: 36px;
+    margin: 35px 35px 50px 35px;    
+    padding-top: 35px;
+}
+
+form{
+    padding-bottom: 40px;
+    width: 30%;
+    height: auto;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    margin: auto;
+    background-color: #1c1c2b;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.item > input{
+    height: 27px;
+    width: 85%;
+    background-color: #1e2535;
+    border: none;
+    color: #bbb6b6;
+    font-size: 17px;
+    padding: 6px 0px 6px 10px;
+    margin-bottom: 20px;    
+}
+
+.label{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+    padding-left: 3px;
+}
+.control{
+    padding-left: 70px;
+}
+.ritem {
+    margin-bottom: 20px;
+}
+.ritem > label{
+    color: #d3d3d4;
+    font-size: 19px;
+    padding-left: 9px;
+}
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+.pitem{
+    float: left;
+    width: 90px;
+    margin-bottom: 5px;
+}
+.pitem > label{
+    margin-left: 3px;
+    color: #d3d3d4; 
+    font-size: 13px;
+}
+button{
+    font-size: 16px;
+    border: none;
+    padding: 12px 23px;
+    color: #ccc3c3;
+    background-color: #2b2e40;
+    margin-top: 10px;
+    width: 85%;
+    border: 1px solid gold;
+}
+button:hover{
+    color: #2b2e40;
+    background-color: #ccc3c3;
+}

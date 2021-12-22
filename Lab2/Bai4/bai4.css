@@ -1,0 +1,29 @@
+.box{
+	margin: auto;
+    width: 28%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #6b6b6b;
+    padding: 0px 16px 10px 16px;
+}
+.h-box{
+	line-height: 35px;
+    background-color: #35f36b;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -16px;
+    margin-right: -16px;
+    color: #926767;
+    font-family: system-ui;
+}
+.f-b{
+	color: white;
+	font-size: 17px;
+}
+.fn-b{
+	color: gold;
+}
+#slx{
+	font-weight: bold;
+    font-size: 24px;
+    color: #ff18b8;
+}

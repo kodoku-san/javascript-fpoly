@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Menu</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>BÁN HÀNG</h1>
+        <select id="option" onclick="filter()">
+          <option hidden>Mức giá</option>
+          <option value="300"> 0 - 300</option>
+          <option value="600">300 - 600</option>
+          <option value="900">> 600</option>
+          <option value="all">Tất cả</option>
+        </select>
+      </div>
+    </div>
+    <div class="table">
+      <table >
+        <tr>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="all"
+              onclick="checkAll()"
+            />
+          </td>
+          <th class="name">Hàng hoá</th>
+          <th class="price">Đơn giá</th>
+          <th class="amount">Số lượng</th>
+          <th class="money">Thành tiền</th>
+        </tr>
+        <tr id="row1">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="iphone9"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">iPhone 9</td>
+          <td class="price" id="iphone9-price">700</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="iphone9-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <td class="money" id="iphone9-Money"></td>
+        </tr>
+        <tr id="row2">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="samsung"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">Samsung</td>
+          <td class="price" id="samsung-price">400</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="samsung-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <th class="money" id="samsung-Money"></th>
+        </tr>
+        <tr id="row3">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="nokia"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">Nokia</td>
+          <td class="price" id="nokia-price">100</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="nokia-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <th class="money" id="nokia-Money"></th>
+        </tr>
+        <tr id="row4">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="sony"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">Sony Xperia</td>
+          <td class="price" id="sony-price">450</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="sony-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <th class="money" id="sony-Money"></th>
+        </tr>
+        <tr id="row5">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="motorola"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">Motorola</td>
+          <td class="price" id="motorola-price">180</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="motorola-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <th class="money" id="motorola-Money"></th>
+        </tr>
+        <tr id="row6">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="oppo"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">Oppo</td>
+          <td class="price" id="oppo-price">600</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="oppo-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <th class="money" id="oppo-Money"></th>
+        </tr>
+        <tr id="row7">
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              name="product"
+              id="bphone"
+              onclick="boxCheck(this.id)"
+            />
+          </td>
+          <td class="name">bPhone</td>
+          <td class="price" id="bphone-price">90</td>
+          <td class="amount">
+            <input
+              disabled
+              type="text"
+              name="amount"
+              id="bphone-Nr"
+              value=""
+              placeholder="0"
+              onkeyup="calculateMoney(this.id.slice(0,-3))"
+            />
+          </td>
+          <th class="money" id="bphone-Money"></th>
+        </tr>
+        <tr class="fn-col">
+          <th colspan="4">TỔNG</th>
+          <th class="money"></th>
+        </tr>
+      </table>
+    </div>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

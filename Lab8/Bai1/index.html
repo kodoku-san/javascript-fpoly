@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+	<title>Bài 1 - Lab8</title>
+</head>
+<body ng-controller="myController">
+	<div class="container">
+		<div class="item">
+			<p class="label">First Name</p>
+			<input type="text" ng-model="employee.FirstName" />
+			<p class="label">Last Name</p>
+			<input type="text" ng-model="employee.LastName" />
+			<p class="label">Gender</p>
+			<input type="text" ng-model="employee.Gender" />
+		</div>
+		<div class="rs">
+		 	<span class="rs-item">First Name: <b>{{employee.FirstName}}</b></span>
+		 	<span class="rs-item">Last Name: <b>{{employee.LastName}}</b></span>
+		 	<span class="rs-item">Gender: <b>{{employee.Gender}}</b></span>
+		</div>
+	</div>
+</body>
+</html>

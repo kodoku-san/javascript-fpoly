@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+table {
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    border-top: 1px solid black;
+}
+
+th, tr, td{
+	padding: 10px;
+}
+
+.name {
+    width: 200px;
+}
+
+.price {
+    width: 170px;
+}
+
+.amount {
+    width: 200px;
+}
+
+.money {
+    width: 140px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+#option{
+    padding: 5px;
+    color: black;
+}
+
+.fn-col{
+    font-size: 24px;
+}

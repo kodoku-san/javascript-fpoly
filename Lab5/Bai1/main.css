@@ -1,0 +1,39 @@
+body{
+    background-color: #328b4deb; 
+    font-size: 1.2em;
+}
+.container{
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    width: 500px;
+    border:solid 2px white;
+}
+.container img{
+    margin-left: 0px;            
+    height: 200px;
+}
+#qty{
+    width: 100px;
+    height: 30px;
+    background-color: cadetblue;
+    border: none;
+    text-align: center;
+    font-size: 1.1em;
+    color: whitesmoke;
+}
+button{
+    width: 50px;
+    height: 32px;
+    border: none;
+    background-color: gold;
+}
+
+body>h3{
+    color: white;
+    margin: 10px auto;
+    line-height: 30px;
+    width: 300px;
+    height: 30px;
+    border: solid 2px white;
+}

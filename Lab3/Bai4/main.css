@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.date{
+	margin: auto;
+    width: 25%;
+    padding: 10px;
+    background-color: #35f36b;
+    text-align: center;
+}
+.box{
+    border: 9px dotted white;
+    padding: 20px;
+}
+.t-date, .s-date{
+	max-width: 300px;
+
+}
+.day{
+	padding: 10px;
+    margin-left: -73px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: 23px;
+}
+.month{
+	padding: 10px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: -13px;
+}
+.year{
+	padding-left: 51px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: -74px;
+}
+#days{
+	margin-left: 13px;
+    width: 76px;
+    height: 27px;
+    margin-right: 23px;
+}
+#months{
+	width: 76px;
+    height: 27px;
+    margin-right: 23px;
+}
+#years{
+	width: 76px;
+    height: 27px;
+}

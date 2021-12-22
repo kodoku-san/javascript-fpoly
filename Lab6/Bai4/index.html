@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bài 4 - Lab6</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="form"  onsubmit="event.preventDefault()">
+                <form>
+                    <div class="header">
+                        <h3>Đăng ký thành viên</h3>
+                    </div>
+                    <div class="control">
+                        <div class="item">
+                            <p class="label">Họ và tên</p>
+                            <input type="text" name="hoten" placeholder="Họ và tên" required>
+                        </div>
+                        <!-- <div class="item">
+                            <p class="label">Tên đăng nhập</p>
+                            <input type="text" name="username" placeholder="Tên đăng nhập">
+                        </div> -->
+                        <div class="item">
+                            <p class="label">Ngày sinh</p>
+                            <input  type="date" 
+                                    name="ngaysinh" 
+                                    value="2002-09-16" 
+                                    min="1900-01-01" 
+                                    max="2021-12-31">
+                        </div>
+                        <div class="item">
+                            <p class="label">Số điện thoại</p>
+                            <input type="text" name="phonenumber" placeholder="Số điện thoại" required>
+                        </div>
+                        <div class="ritem">
+                            <p class="label">Giới tính</p>
+                            <input type="radio" name="sex" value="nam" required><label>Nam</label>
+                            <input type="radio" name="sex" value="nu" required><label>Nữ</label>
+                        </div>
+                        <div class="ritem">
+                            <p class="label">Sở thích</p>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Thể thao</label>
+                            </div>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Du lịch</label>
+                            </div>                                    
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Chạy bộ</label>
+                            </div>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Viết lách</label>
+                            </div>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Lập trình</label>
+                            </div>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Nghe nhạc</label>
+                            </div>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite"><label>Xem phim</label>
+                            </div>
+                            <div class="pitem">
+                                <input type="checkbox" name="favorite" onclick="otherFavorite();"><label>Khác</label>
+                            </div>
+                            <div class="ritem"></div>
+                        </div>
+                        <div class="item">
+                            <input style="margin-top: 10px;display: none;" type="text" name="favorite" placeholder="Nhập sở thích của bạn..." required>
+                        </div>
+                        <div class="item">
+                            <button onclick="res();">Đăng ký ngay</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script src="main.js "></script>
+    </body>
+</html>

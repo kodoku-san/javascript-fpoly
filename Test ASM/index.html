@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>PHIẾU XUẤT HÀNG</h2>
+		</div>
+		<div class="a">
+			<form onsubmit="event.preventDefault()">
+				<p class="label">Loại 1</p>
+				<input type="number" id="loai1" min="1" required>
+				<p class="label">Loại 2</p>
+				<input type="number" id="loai2" min="1" required>
+				<p class="label">Loại 3</p>
+				<input type="number" id="loai3" min="1" required>
+				<p class="label">Khu vực</p>
+				<select name="khuvuc" id="khuvuc" required>
+					<option hidden value="">Chọn khu vực</option>
+					<option value="1">Khu vực 1</option>
+					<option value="2">Khu vực 2</option>
+					<option value="3">Khu vực 3</option>
+				</select><br>
+				<button onclick="tinh()">Tính</button><br><br><br> <!-- gọi tới hàm tinh() ở file main.js-->
+				<div id="rs" style="display: none;"> <!-- ẩn khi load vào lần đầu display: none-->
+					<label>Tổng số lượng</label>
+					<input type="text" id="tongsl" disabled><br><br><br>
+					<label>Tiền vận chuyển</label>
+					<input type="text" id="tienvc" disabled><br><br><br>
+					<label>Tiền thưởng</label>
+					<input type="text" id="tienthuong" disabled>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="main.js"></script>
+</html>

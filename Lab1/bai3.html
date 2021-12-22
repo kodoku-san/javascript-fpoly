@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 3 - Lab 1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var a = 20;
+		var b = 30;
+		var x;
+		var y;
+		x = (a + b)*2;
+		y = a*b;
+	</script>
+	<style type="text/css">
+		.box{
+		    text-align: center;
+		    border: 5px solid #d28585;
+		    width: 22%;
+		    margin: 100px auto;
+		    background-color: #35ef6e;
+		    border-radius: 90px 0px;
+		    border-left: 0px;
+		    border-right: 0px;
+		}
+		.ab{
+
+		}
+		.result{
+			text-align: left;
+			margin-left: 60px;
+		}
+		span{
+			font-weight: bold;
+			color: #903333;
+		}
+		h2{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="head">
+			<h2>HÌNH CHỮ NHẬT</h2>
+		</div>
+		<div class="ab">
+			<p>Chiều dài: <span style="padding-right: 20px;" id="cd"></span>Chiều rộng: <span id="cr"></span></p>
+			<p></p>
+		</div>
+		<div class="result">
+			<p>Chu vi: <span style="padding-right: 30px;" id="cv"></span>Diện tích: <span id="dt"></span></p>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		console.log(x);
+		console.log(y);
+		document.getElementById('cd').innerHTML = a;
+		document.getElementById('cr').innerHTML = b;
+		document.getElementById('cv').innerHTML = x;
+		document.getElementById('dt').innerHTML = y;
+	</script>
+</html>

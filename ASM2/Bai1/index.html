@@ -1,0 +1,39 @@
+<!--
+	Name: Bài 1 - Assignment giai đoạn 2
+	Author: Hồ Hoàng Phú - PS17588
+	Other: Html css + js kết hợp với AngularJS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <title>Bài 1 - Assignment giai đoạn 2 - Hồ Hoàng Phú</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+    </head>
+
+    <body ng-app="ASM2_B1">
+        <div class="container" ng-controller="kodoku">
+            <div class="header">
+            <p>TÀI LIỆU HỌC TẬP <3</p>            
+        </div>
+        <div class="contain">
+            <div class="img">
+                <img src="{{img}}" id="image"/>
+            </div>
+            <div id="totalText">
+                Ảnh 1
+            </div>
+            <div class="buttonimg">
+                <button ng-click="First();" id="btnFirst">First</button>
+                <button ng-click="Previous();" id="btnPrevious">Previous</button>
+                <button ng-click="Next();" id="btnNext">Next</button>
+                <button ng-click="Final();" id="btnFinal">Final</button>
+            </div>
+            <input type="checkbox" ng-click="autoLoadImg()"><em class="text-auto">Load ảnh tự động</em>
+        </div>
+      </div>     
+    </body>
+    <script src="js/main.js"></script>
+</html>

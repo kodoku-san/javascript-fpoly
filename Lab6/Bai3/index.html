@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 3 - Lab6</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="" onsubmit="event.preventDefault()">
+                <div class="header">
+                    <p id="head">ĐẶT HÀNG</p>
+                </div>
+                <div class="content">
+                    <div class="block">
+                        <p class="label">Sản Phẩm</p>
+                        <input type="text" id="inputSP" required />
+                    </div>
+                    <div class="block">
+                        <p class="label">Loại Sản Phẩm</p>
+                        <div class="inputNationality">
+                            <input list="loaisps" id="loaisp" placeholder="Chọn Loại" required  />
+                            <datalist id="loaisps">
+                                <option value="Thường"></option>
+                                <option value="Tốt"></option>
+                                <option value="Cực Tốt"></option>
+                                <option value="Vip 1"></option>
+                                <option value="Vip 2"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="label">Đơn Giá</p>
+                        <input type="number" id="inputDonGia" required value="0" />
+                    </div>
+                    <div class="block">
+                            <p class="label">Nơi Nhận Hàng</p>
+                            <div class="inputNoiNH">
+                                <input type="radio" name="noinh" id="noithanh" required onclick="checkNNH(0)" />
+                                    <label>Nội thành</label> 
+                                <input type="radio" name="noinh" id="ngoaithanh" required onclick="checkNNH(1)" />
+                                    <label>Ngoại thành</label>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="block">
+                        <input style="display: none;" type="text" id="inputPVC" value="Phí vận chuyển: 100.000" disabled />
+                    </div>
+                    
+                    <div class="btnS">
+                        <input type="submit" value="Đặt mua" id="btn" onclick="datmua()" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>

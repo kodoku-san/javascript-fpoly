@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    width: 430px;
+    margin-top: 25px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.blockId,
+.blockName,
+.blockEmail,
+.blockGender,
+.blockFavor,
+.blockNationality,
+.blockNote {
+    margin-bottom: 10px;
+}
+
+#inputIdSV,
+#inputNameSV,
+#inputEmail,
+.inputGender,
+.inputFavor,
+#nationality,
+#note {
+    width: 420px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.inputGender label,
+.inputFavor label {
+    padding: 0 5px;
+}
+
+#note {
+    line-height: 15px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    max-width: 420px;
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    margin-top: 16px;
+}
+
+#btn:hover {
+    background-color: #bfd9fb;
+}
+.header{
+	text-align: center;
+}
+.btn{
+    text-align: center;
+}
+.errorLog{
+    font-style: italic; 
+    color: red;
+}

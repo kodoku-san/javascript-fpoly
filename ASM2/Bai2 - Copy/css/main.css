@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-color: #484758;
+	font-family: monospace;
+}
+.container {
+    margin: 0 auto;
+    width: 430px;
+    margin-top: 25px;
+    font-size: 15px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    padding: 20px;
+}
+
+#head {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.blockId,
+.blockName,
+.blockEmail,
+.blockGender,
+.blockFavor,
+.blockNationality,
+.blockNote {
+    margin-bottom: 10px;
+}
+
+#inputIdSV,
+#inputNameSV,
+#inputEmail,
+.inputGender,
+.inputFavor,
+#nationality,
+#note {
+    border: none;
+    border-radius: 3px;
+    width: 420px;
+    line-height: 30px;
+    padding-left: 10px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+.inputGender label,
+.inputFavor label {
+    padding: 0 5px;
+}
+
+.label {
+    padding-bottom: 5px;
+    color: #b7f157;
+}
+
+#note {
+    line-height: 15px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    max-width: 420px;
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-family: monospace;
+    margin-top: 16px;
+}
+
+#btn:hover {
+    background-color: #bfd9fb;
+}
+.header{
+	text-align: center;
+}
+.btn{
+
+    text-align: center;
+}
+.errorLog{
+    font-style: italic; 
+    color: red;
+}
+.successLog{
+    color: #35f36b;
+}
+.info{
+    color: #caff82;
+    font-weight: bold;
+    font-size: 15px;
+}
+.i-item{
+    color: white;
+    margin-left: 16px;
+    border-bottom: 3px solid black;
+}
+.contentInfo{
+    margin-top: 40px;    
+}

@@ -1,0 +1,30 @@
+body{
+	font-family: monospace;
+	color: white;
+}
+
+.container{
+	border: 1px solid #311e1e;
+	width: 700px;
+	margin: 0 auto;
+	padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #293c5a;
+    box-shadow: 0 0 15px black;
+	margin-top: 20px;
+}
+.table{
+	margin-top: 20px;
+}
+tr, td, th{
+	padding: 22px!important;
+	text-align: center!important;
+}
+select{
+	height: 27px;
+	border: none;
+	background-color: white;
+	color: black;
+	text-align: center;
+}

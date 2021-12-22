@@ -1,0 +1,45 @@
+*{
+	font-family: monospace;
+}
+.container { 
+	width: 1140px; 
+	margin:auto; 
+	border:1px solid darkgrey
+}
+header { 
+	background: darkolivegreen; 
+	height: 120px; 
+	position: relative;
+}
+main{ 
+	background: darkseagreen; 
+	min-height: 400px;
+}
+footer { 
+	background: darkslategray; 
+	height: 100px;
+}
+#dongho{
+	float: right;
+    margin-right: 16px;
+    margin-top: 9px;
+    color: white;
+    font-weight: bold;
+}
+.hello{
+    padding: 16px 27px;
+    background-color: #494750;
+    margin: auto;
+    width: 57%;
+    color: white;
+    border-radius: 10px;
+    font-size: 28px;
+}
+#reload{
+	margin: 16px 7px;
+    background-color: #822561;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #822561;
+    color: #12ffc8;
+}

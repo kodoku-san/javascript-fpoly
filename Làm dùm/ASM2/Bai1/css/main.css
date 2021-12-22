@@ -1,0 +1,26 @@
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #5f4c38;
+    font-size: 27px;
+    margin: 8px;
+}
+
+.img img {
+    width: 420px;
+    height: 580px;
+}
+
+.buttonimg{
+    margin: 20px;
+}

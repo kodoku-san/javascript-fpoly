@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 3 - Lab7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-app="k3">
+	<div class="container" ng-controller="kodoku">
+	    <div class="caption">
+	        <span>FORM NHẬP SẢN PHẨM</span>
+	    </div>
+	    <div class="item">
+	    	<form onsubmit="event.preventDefault()" name="frm">
+		    	<p>Tên SP</p>
+		    	<input type="text" name="nsp" ng-model="nsp" class="i-input" 
+		    			required minlength="2" maxlength="30">
+		    	<em ng-if="frm.nsp.$invalid" class="text-danger h6">Nhập tên sản phẩm từ 2 đến 30 ký tự</em>
+		    	<p class="end-i-item">Số lượng</p>
+		    	<input type="number" name="slsp" ng-model="slsp" class="i-input">
+		    	<em ng-if="slsp < 1 || slsp > 100 || frm.slsp.$viewValue == undefined" class="text-danger h6">Nhập số lượng từ 1 đến 100</em>
+		    	<p class="end-i-item">Nhà sản xuất</p>
+		    	<select name="nsx" ng-model="nsx" class="form-control bg-secondary text-white">
+		            <option value="0">Chọn NSX</option>
+		            <option value="1">Samsung</option>
+		            <option value="2">Toshiba</option>
+		            <option value="3">HTC</option>
+		        </select>
+		        <em ng-if="!nsx || nsx==0" class="text-danger h6">Hãy chọn 1 nhà sx</em>
+		    	<p class="end-i-item">Tình trạng</p>
+		    	<div class="s-item">
+		    		<input type="radio" name="tinhtrang" ng-model="tinhtrang" value="1"><label>Hàng cũ</label>
+		    		<input type="radio" name="tinhtrang" ng-model="tinhtrang" value="2"><label>Hàng mới</label>
+		    		<br><em ng-if="!tinhtrang" class="text-danger h6">Cũ hay mới vậy thím??</em>
+		    	</div>
+		    	<p class="end-i-item">Màu sắc</p>
+		    	<div class="s-item">
+		    		<input type="checkbox" name="tt" ng-model="maudo" value="1"><label>Đỏ</label>
+		    		<input type="checkbox" name="tt" ng-model="mauden" value="2"><label>Đen</label>
+		    		<input type="checkbox" name="tt" ng-model="mautrang" value="3"><label>Trắng</label>
+		    		<em ng-if="!maudo && !mauden && !mautrang " class="text-danger h6"><br>Màu gì vậy thím??</em>
+		    	</div>
+		    	<em ng-if="(maudo || mauden || mautrang) && tinhtrang && (nsx && nsx!=0) && ((slsp >= 1 && slsp <= 100) && frm.slsp.$viewValue != undefined) && !frm.nsp.$invalid" class="text-success h6"><br>OKE bro! Giờ hãy bấm nút "Nhập sản phẩm" đi bro!</em>
+		    	<div class="b-item">
+		    		<button ng-click="nhapsp()">Nhập sản phẩm</button>
+		    	</div>
+		    </form>
+	    </div>
+	</div>
+</body>
+	<script type="text/javascript" src="main.js"></script>
+</html>

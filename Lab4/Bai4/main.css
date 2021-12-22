@@ -1,0 +1,20 @@
+*{
+	font-family: monospace;
+}
+button{
+    margin-bottom: 16px;
+    width: 169px;
+    height: 36px;
+    background-color: #35f36b;
+    border: 1px solid #35f36b;
+}
+button:hover{
+    color: #35f36b;    
+    background-color: white;
+}
+.box{
+    text-align: center;
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 1 - Lab7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-app="k1">
+	<div class="container" ng-controller="kodoku">
+	    <div class="caption">
+	        <h4>Thông tin sinh viên</h4>
+	        <img src="images/{{photo}}">
+	    </div>
+	    <ul>
+	        <li><span>Họ tên : </span> {{hoten}} </li>
+	        <li><span>Ngày sinh : </span> {{ngaysinh}} </li>
+	        <li><span>Phái: </span> {{gender}} </li>
+	        <li><span>Điểm: </span> {{mark}} </li>
+	    </ul>
+	</div>
+</body>
+	<script type="text/javascript" src="main.js"></script>
+</html>

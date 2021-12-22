@@ -1,0 +1,28 @@
+#t{
+	padding-top: 10px;
+}
+#l{
+	padding-bottom: 10px;
+}
+.box{
+	width: 20%;
+	padding: 0px 20px;
+	border-radius: 20px;
+}
+h2{
+    line-height: 40px;
+    background-color: gold;
+    padding: -200px;
+    margin: -1px -21px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.info{
+	background-color: #c1bed0;
+	margin: -21px;
+	border-radius: 0px 0px 20px 20px;
+}
+p{
+	padding-left: 30px; 
+	color: #770a92;
+}

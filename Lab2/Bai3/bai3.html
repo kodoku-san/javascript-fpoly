@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 3 Lab 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bai3.css">
+	<script type="text/javascript" src="bai3.js"></script>
+</head>
+<body>	
+	<div class="container">
+		<div class="box">
+			<h3>GIẢI PHƯƠNG TRÌNH BẬC 2</h3>
+			<script type="text/javascript">
+				if (a != 1) {
+					if (a == -1) {
+						document.write("-");
+					} else {
+						document.write(a);
+					}
+				} 
+
+				//write b;
+				if (b > 0 ) {
+					document.write("x<sup>2</sup> + ");
+					if (b != 1) {
+						document.write(b);
+					}
+				} else {				
+					document.write("x<sup>2</sup> - ");
+					if (b != 1) {
+						document.write(b*(-1));
+					}
+				}
+
+				//write c;
+				if (c > 0) {
+					document.write("x + ");
+					document.write(c);
+				} else if (c < 0) {
+					document.write("x - ");
+					document.write(c*(-1));
+				} else {
+					document.write("x");
+				}
+				document.write(" = 0");
+
+				//result
+				if (delta < 0 ) {
+					document.write("<p>Phương trình vô nghiệm!</p>");
+				} else if (delta == 0) {
+					var x = -b/(2*a);
+					document.write("<p>Phương trình có nghiệm kép x<sub>0</sub> = " + x + "</p>");
+				} else {
+					var x1 = (-b + Math.sqrt(delta))/(2*a);
+					var x2 = (-b - Math.sqrt(delta))/(2*a);
+					document.write("<p>Phương trình có 2 nghiệm phân biệt: </p>");
+					document.write("<p>x<sub>1</sub> = " + x1 + "</p>");
+					document.write("<p>x<sub>2</sub> = " + x2 + "</p>");
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>

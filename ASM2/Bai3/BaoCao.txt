@@ -1,0 +1,41 @@
+Khởi tạo app + controller như các bài trước!
+
+Tạo một object để lưu thông tin sản phẩm: $scope.listRow
+
+Sử dụng ng-repeat="row in listRow" 
+=> Để lặp và show ra tất cả thông tin SP từ Object 
+	Sử dụng dữ liệu thông qua: {{row.name}} {{row.price}}...
+
+Click chọn vào sản phẩm (checkbox) 
+	=> Gọi tới hàm boxCheck(id) truyền vào ngay tại vị trí SP, id là id sản phẩm
+		- Chuyển thuộc tính disabled của input amount (số lượng) thành false để người dùng có thể nhập số lượng
+	Tại input đó thêm vào ng-keyup="calculateMoney(amountMd, row.idProduct)" để bắt sự kiện người dùng nhập vào
+gọi tới hàm calculateMoney.
+
+	Hàm calculateMoney() sẽ kiểm tra người dùng nhập vào đúng là số hay chưa
+	SAi thì dừng lại (return false)
+	Đúng thì tiếp tục: 
+		- Gán số lượng SP có idProduct truyền vào, thành số lượng người dùng đã nhập: 
+		$scope.listRow[id]['amount'] = amount; 
+		- Gọi hàm reMath(); để tính lại tổng tiền!
+		Chức năng của hàm reMath(): tính lại tổng tiền từ data của object!
+
+Thêm vào ng-repeat="row in listRow | filterTest: filterData"
+để gọi đến
+app.filter('filterTest', func...);
+
+Trong hàm này tạo ra việc xử lý filter object truyền vào: 
+Xem ở code (input, filterData)
+input là: object listRow
+filterData: là ng-model="filterData" đã tạo tại select vào có các giá trị tương ứng là
+	0: All
+	1: < 300
+	2: 300 <= x <= 600
+	3: > 600
+
+
+Sử dụng if để check người dùng chọn loại filter nào và gọi đến hàm filter tương ứng. Line 157 -> 160
+
+- Hàm checkOrNotCheck() có tác dụng, khi người dùng đã lọc sản phẩm. Và tại phần lọc đó, người dùng bấm check vào để chọn sản phẩm. Thì sau khi bỏ lọc sản phẩm đó vẫn sẽ được chọn!
+
+Cảm ơn cô đã đọc!

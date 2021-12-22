@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: #61a0e1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 450px;
+    height: 550px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#head {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.block {
+    margin-bottom: 10px;
+}
+
+#inputNoiNH,
+#inputPVC,
+#inputSP,
+#inputDonGia,
+.inputNoiNH,
+#loaisp{
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width: 400px;
+    line-height: 30px;
+    padding-left: 10px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+.inputGender label,
+.inputFavor label {
+    padding: 0 5px;
+}
+
+.label {
+    padding-bottom: 5px;
+}
+
+#note {
+    line-height: 15px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    max-width: 400px;
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    border-style: none;
+}
+
+#btn:hover {
+  
+}
+.btnS{
+    text-align: center;
+    margin-top: 27px; 
+}

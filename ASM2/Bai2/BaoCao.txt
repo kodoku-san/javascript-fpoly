@@ -1,0 +1,69 @@
+Name: Bài 2 - Assignment giai đoạn 2
+Author: Hồ Hoàng Phú - PS17588
+Other: Html css + js kết hợp với AngularJS
+
+
+1-	Tạo ứng dụng tên ASM2_B2
+-	Tạo controller tên kodoku
+-	Code khởi tạo angularjs (để tạo app, gắn controller vào hàm xử lý)
+	    
+	    app= angular.module("ASM2_B2",[]);
+	    app.controller("kodoku",main);
+	    function main($scope){
+	        //code xử lý
+	    }
+
+2.	Validate với msv
+-	Bind giá trị của msv vào scope : ng-model="msv" 
+-	Thêm quy tắc nhập liệu cho msv: bắt buộc nhập required
+-	Hiện thông báo lỗi 
+<span class="errorLog" ng-if="frm.msv.$invalid" >Nhập mã sinh viên của bạn vào nhé!</span>
+
+*<div id="er" style="{{erMsv}}"> </div>: để cho lần đầu load vào web khi chưa tác động gì đến input thì dòng báo lỗi sẽ không hiện ra!
+
+3. Validate tương tự với họ tên
+
+4.	Validate với Email
+-	Bind giá trị của email vào scope : ng-model="email" 
+-	Thêm quy tắc nhập liệu cho email: định dạng đúng của một email type="email" 
+-	Hiện thông báo lỗi khi số lượng nhập sai định dạng
+<span class="errorLog" ng-if="frm.email.$invalid" >Nhập Email của bạn vào nhé!</span>
+
+5.	Validate với gender (radio button)
+-	Bind giá trị của gender vào scope : ng-model="gender" 
+-	Hiện thông báo lỗi khi  không chọn cái nào trong radio
+2 tag input có name là gender
+<span class="errorLog" ng-if="!gender" >Chọn giới tính đi bạn!</span>
+
+6.	Validate với Sở thích (chek box)
+-	Bind giá trị của gender vào scope : 
+ng-model="read"
+ng-model="travel"
+ng-model="music"
+ng-model="cook"
+ng-model="other"
+
+<span class="errorLog" ng-if="!read && !travel && !music && !cook && !other" >Chọn ít nhất một sở thích nha bạn!</span>
+
+7.	Validate với Quốc tịch (selectbox)
+-	Bind giá trị của country vào scope : ng-model="country" 
+-	Hiện thông báo lỗi khi user không chọn mục nào trong selectbox
+<span class="errorLog" ng-if="!country" >Bạn ở nước nào? Chọn đi!</span>
+
+8.	Validate với Ghi chú (textarea)
+-	Bind giá trị của note vào scope : ng-model="note" 
+-	Hiện thông báo lỗi khi user nhập quá 200 ký tự
+<span class="errorLog" ng-if="note.length > 200">Ghi chú ít thôi thím, từ dưới 200 kí tự được rồi!</span>
+
+9.	Thông báo thành công
+Nếu user nhập đúng tất cả thì hiện: code
+<span class="successLog" ng-if="!frm.msv.$invalid && !frm.hoten.$invalid && !frm.email.$invalid && gender && (read || travel || music || cook || other) && country && (note == undefind || note.length <= 200)" >Được rồi đó, bấm vào "Đăng ký ngay" đi bro</span>
+
+Phía file main.js
+	Xử lý dữ liệu truyền vào thông qua biến $scope 
+	=> Có thể kiểm tra đã nhập đúng như yêu cầu hay chưa!
+
+
+*Làm thêm: phần log ra trang thông tin vừa nhập!
+
+Cảm ơn cô đã đọc!

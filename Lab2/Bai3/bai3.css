@@ -1,0 +1,16 @@
+.container{
+	color: #3529e4;
+}
+.box{
+	margin: auto;
+    padding: 9px 16px 9px 16px;
+    border: 2px solid #925353;
+    width: 27%;
+    border-radius: 10px;
+}
+h3{
+	text-align: center;
+	color: #35f36b;
+    font-family: sans-serif;
+    font-size: x-large;
+}

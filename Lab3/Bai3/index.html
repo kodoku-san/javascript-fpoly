@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 3 Bài 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="h-title">
+			<span class="h2">MÁY TÍNH JAVASCRIPT</span>
+			<span class="h5">Tác giả: Hồ Hoàng Phú</span>
+		</div>
+		<table class="tableB3">
+			<tr>
+				<td><button onclick="ganSo(7)">7</button></td>
+				<td><button onclick="ganSo(8)">8</button></td>
+				<td><button onclick="ganSo(9)">9</button></td>
+				<td><button onclick="mathL3('+')">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="ganSo(4)">4</button></td>
+				<td><button onclick="ganSo(5)">5</button></td>
+				<td><button onclick="ganSo(6)">6</button></td>
+				<td><button onclick="mathL3('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="ganSo(1)">1</button></td>
+				<td><button onclick="ganSo(2)">2</button></td>
+				<td><button onclick="ganSo(3)">3</button></td>
+				<td><button onclick="mathL3('*')">x</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="ganSo(0)">0</button></td>
+				<td><button onclick="clearL3()">C</button></td>
+				<td><button onclick="result()">=</button></td>
+				<td><button onclick="mathL3('/')">:</button></td>
+			</tr>
+			<tr>
+				<td><button id="s1" class="result" disabled>...</button></td>
+				<td><button id="pt" class="result" disabled>...</button></td>
+				<td><button id="s2" class="result" disabled>...</button></td>
+				<td><button id="rs" class="result" disabled>...</button></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+	<title>Bài 2 - Lab8</title>
+</head>
+<body ng-app="FPT">
+	<div ng-controller="handleEventController">
+		<table class="container">
+			<tr>
+				<td>Name</td>
+				<td>Likes</td>
+				<td>Dislikes</td>
+				<td>Minus</td>
+				<td>Action</td>
+			</tr>
+			<tr ng-repeat="technology in technologies">
+				<td>{{technology.Name}}</td>
+				<td>{{technology.Likes}}</td>
+				<td>{{technology.Dislikes}}</td>
+				<td>{{technology.Minus}}</td>
+				<td>
+				<button ng-click="increaseLike(technology)"class="lbutton">Like</button>
+				<button ng-click="increaseDislike(technology)" class="dbutton">Dislike</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

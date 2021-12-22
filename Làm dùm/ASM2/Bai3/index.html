@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 3 - ASM giai đoạn 2 - Hồ Hoàng Phú</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+    </head>
+
+    <body ng-app="ph">
+        <div class="container" ng-controller="u">
+            <div class="header">
+                <h1>BÁN HÀNG</h1>
+                <label>Chọn mức giá:</label>
+                <select id="option" ng-model="filterData">
+                    <option value="1"> 0 - 300</option>
+                    <option value="2">300 - 600</option>
+                    <option value="3">> 600</option>
+                    <option value="0">Tất cả</option>
+                </select>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <td class="checkbox">
+                            <input type="checkbox" name="product" id="all" ng-click="checkAll()" />
+                        </td>
+                        <th class="name">Hàng hoá</th>
+                        <th class="price">Đơn giá</th>
+                        <th class="amount">Số lượng</th>
+                        <th class="money">Thành tiền</th>
+                    </tr>
+                    <tr ng-repeat="row in listRow | filterTest: filterData" id="rowId{{row.idProduct}}">
+                        <td class="checkbox">
+                            <input type="checkbox" name="product" id="{{row.idProduct}}" ng-click="boxCheck(row.idProduct)"/>
+                        </td>
+                        <td class="name">{{row.name}}</td>
+                        <td class="price" id="price{{row.idProduct}}">{{row.price | currency}}</td>
+                        <td class="amount">
+                            <input disabled type="text" name="amount" id="amount{{row.idProduct}}" placeholder="..." ng-keyup="calculateMoney(amountMd, row.idProduct)" ng-model="amountMd"/>
+                        </td>
+                        <td class="money" id="money{{row.idProduct}}">{{row.getMoney() | currency}}</td>
+                    </tr>
+                    <tr class="fn-col">
+                            <th colspan="4">TỔNG</th>
+                            <th class="money">{{totalMoney | currency}}</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+body{
+	background-color: #5072a0;
+	font-family: monospace;
+	font-size: 16px;
+}
+.main{
+	color: white;
+	margin: 0 auto;
+	width: 20%;		
+	box-shadow: 0 0 20px 0 rgb(0 0 0 /20%);
+}
+p{
+	text-align: center;
+    margin-bottom: 5px;
+}
+input{
+	margin: 10px 0;
+	border: none;
+	height: 20px;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.button{
+	text-align: center;
+}
+button{
+	border-radius: 3px;
+	border: none;
+	background-color: #9acc1a;
+	font-size: 12px;
+    line-height: 25px;
+}
+button:hover{
+	background-color: #b7ff00;
+}
+#thongdiep{
+	text-align: center;
+	display: none;
+	color: white;
+}

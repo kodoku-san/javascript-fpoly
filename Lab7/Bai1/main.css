@@ -1,0 +1,26 @@
+.container { 
+	width: 400px; 
+	font-size: 1.3em; 
+}
+ul { 
+	list-style: none;
+}
+span { 
+	color:darkblue; 
+	width:90px; 
+	margin-left: 40px;
+}
+h4 { 
+	color: navy; 
+	text-transform: uppercase;
+}
+.caption{
+	text-align: center;
+}
+h4{
+	margin: 16px;
+}
+.container{
+	border: 1px solid blue;
+	margin-top: 20px;
+}

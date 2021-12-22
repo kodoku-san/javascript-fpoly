@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2 - Lab7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-app="k2">
+	<div class="container" ng-controller="kodoku">
+	    <div class="caption">
+	        <h4>TÍNH DIỆN TÍCH CHU VI HÌNH CHỮ NHẬT</h4>
+	    </div>
+	    <div class="item">
+	    	<form onsubmit="event.preventDefault()">
+		    	<p>Chiều dài</p>
+		    	<input type="text" name="cd" ng-model="cd">
+		    	<p>Chiều rộng</p>
+		    	<input type="text" name="cr" ng-model="cr">
+		    	<p>Chu vi</p>
+		    	<input type="text" name="cv" value="{{cv}}">
+		    	<p>Diện tích</p>
+		    	<input type="text" name="dt" value="{{dt}}">
+		    	<button ng-click="tinhtoan()">Tính toán</button>
+		    </form>
+	    </div>
+	</div>
+</body>
+	<script type="text/javascript" src="main.js"></script>
+</html>

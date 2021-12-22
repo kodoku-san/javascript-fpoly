@@ -1,0 +1,36 @@
+#baihoc {
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    font-size: 1em;
+}
+#btnxem { 
+    width: 120px; 
+    background-color:darkorange;
+    height: 32px;
+    border: 1px solid darkorange;
+    font-size: 1em;
+}
+fieldset {
+    width: 510px;
+    margin:auto;
+    font-size: 1.1em;
+    padding: 20px;
+    border-radius: 5px;
+}
+.dh{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #d41f0d;
+    font-weight: bold;
+    font-family: monospace;
+}
+#button{
+    color: white;
+    border: none;
+    height: 30px;
+    padding: 0px 10px;
+    background-color: #b7b276;
+    font-family: monospace;
+}

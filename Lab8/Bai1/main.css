@@ -1,0 +1,38 @@
+body{
+	background-color: #254f9494;
+	font-family: monospace;
+}
+
+.container{
+	border: 1px solid #311e1e;
+	width: 430px;
+	margin: 0 auto;
+	padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #673e3e;
+}
+input{
+	border: none;
+	height: 24px;
+	width: 270px;
+	text-align: center;
+	font-size: 16px;
+	color: #41ca43;
+}
+.label{
+	font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.rs{
+	margin-top: 20px;
+    background-color: #00ff56;
+    line-height: 24px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+b{
+	color: #fefffd;
+    font-size: 18px;
+}

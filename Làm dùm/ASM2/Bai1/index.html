@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <title>Bài 1 - Assignment giai đoạn 2</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+    </head>
+
+    <body ng-app="ph">
+        <div class="container" ng-controller="u">
+            <div class="header">
+            <p>Bài 1</p>            
+        </div>
+        <div class="contain">
+            <div class="img">
+                <img src="{{img}}" id="image"/>
+            </div>
+            <div id="totalText">
+                Ảnh 1
+            </div>
+            <div class="buttonimg">
+                <button ng-click="First();" id="btnFirst">First</button>
+                <button ng-click="Previous();" id="btnPrevious">Previous</button>
+                <button ng-click="Next();" id="btnNext">Next</button>
+                <button ng-click="Final();" id="btnFinal">Final</button>
+            </div>
+        </div>
+      </div>     
+    </body>
+    <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,58 @@
+body{
+	font-family: monospace;
+	background-color: #00ffe7;
+}
+.container { 
+    width:700px; 
+    margin:auto; 
+    border:0.5px solid black; 
+    background:darkkhaki;
+}
+.rows{
+    text-align: center;
+}
+button:hover{
+    background-color: #abc597;
+    color: black;
+}
+.row { 
+	display:flex; 
+	line-height: 36px; 
+	text-align: center;
+	font-size: 16px;
+}
+.row > div { 
+ 	background:wheat; 
+ 	width: 25%; 
+ 	border: 0.1px solid #00000094;
+}
+header, footer { 
+ 	font-weight: bold; 
+ 	color:crimson;
+}
+button { 
+    font-family: monospace;
+    font-size: 16px;
+ 	width: 100px;
+    height: 35px;
+    margin: 10px;
+    color: white;
+    background-color: #49841d;
+    border: none; 
+}
+.head { 
+ 	padding:10px; 
+ 	font-size: 27px;
+ 	font-weight: bold;
+}
+.head span { 
+ 	float:right; 
+ 	font-style:italic;
+}
+#dongho{
+	color: white;
+}
+table{
+	border-collapse:collapse;
+    box-shadow: inset 0 0 16px #3da95e;
+}

@@ -1,0 +1,24 @@
+.box{
+    text-align: center;
+    border: 5px solid #2d0000;
+    width: 22%;
+    margin: 100px auto;
+    background-color: #72beff;
+    border-radius: 90px 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.ab{
+
+}
+.result{
+	text-align: left;
+	margin-left: 36px;
+}
+span{
+	font-weight: bold;
+	color: #903333;
+}
+h2{
+	color: white;
+}
